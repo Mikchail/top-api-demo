@@ -52,7 +52,7 @@ export class TopPageModel extends TimeStamps {
   @prop({ type: () => HhDate })
   hh?: HhDate;
 
-  @prop({ type: () => [String] }) // TODO
+  @prop({ type: () => [TopPageAdvantage] }) // TODO
   advantages: TopPageAdvantage[];
 
   @prop()
