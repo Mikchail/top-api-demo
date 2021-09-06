@@ -12,7 +12,8 @@ jobs:
       - name: Publish to registy
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: https://hub.docker.com/u/mikchail
+          registry: https://ghcr.io
+          name: https://ghcr.io/Mikchail/top-api-demo/top-api-demo
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: "develop"
